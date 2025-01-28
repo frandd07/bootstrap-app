@@ -1,4 +1,6 @@
 "use client";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function NavBar() {
   return (
@@ -9,24 +11,22 @@ export default function NavBar() {
         data-bs-theme="dark"
       >
         <div className="bg-dark p-4">
-          <h5 className="text-body-emphasis h4">Menú</h5>
-          <p className="text-body-secondary">
-            Selecciona una de las opciones del menú.
-          </p>
+          <h5 className="text-body-emphasis h4">Inicio</h5>
+          <p className="text-body-secondary">Hola, mi nombre es Fran</p>
           <ul className="list-unstyled">
             <li>
               <a href="#home" className="text-white text-decoration-none">
-                Inicio
+                React
               </a>
             </li>
             <li>
               <a href="#services" className="text-white text-decoration-none">
-                Servicios
+                Next
               </a>
             </li>
             <li>
               <a href="#about" className="text-white text-decoration-none">
-                Sobre nosotros
+                Bootstrap
               </a>
             </li>
             <li>
@@ -51,7 +51,7 @@ export default function NavBar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <a className="navbar-brand" href="#">
-            Mi Sitio Web
+            Ejercicio 3
           </a>
         </div>
       </nav>

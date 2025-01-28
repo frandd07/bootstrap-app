@@ -1,14 +1,31 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Grid from "./Grid";
+import Grid from "./components/Grid";
 import NavBar from "./components/Navbar";
+import Card from "./components/Card";
+import ModalExample from "./components/ModalExample";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div>
+      <NavBar />
+      <br />
+      <br />
+      <br />
+      <br />
       <Grid />
       <br />
-      <NavBar />
+      <br />
+      <br />
+      <br />
+      <Card />
+      <br />
+      <br />
+      <br />
+      <br />
+      <ModalExample />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
