@@ -1,8 +1,12 @@
 "use client";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { useEffect } from "react";
 
 export default function NavBar() {
+  useEffect(() => {
+    // Lo pongo para que se ejecute solo en el cliente sino da error en el document aunque se ve todo.
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
   return (
     <div>
       <div
